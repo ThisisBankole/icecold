@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  
+
+  <style>
+    body {
+      font-family: 'Karla', sans-serif;
+
+    }
+
+    .container {
+      margin: 60px 30px 40px 50px;
+    
+    }
+    
+  
+    .top-header {
+      color: hsl(179, 62%, 43%);
+    }
+
+    .second-header {
+      padding-top: 0.9em;
+      color: hsl(71, 73%, 54%);
+    }
+
+    .first-para {
+      color: hsl(218, 22%, 67%);
+      line-height: 1.9em;
+      
+
+    }
+
+    .second-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        background-color:  hsl(179, 71%, 40%);
+        
+    }
+
+    .sub {
+      margin: 40px 30px 50px 50px;
+      color: hsl(204, 43%, 93%);
+      
+      
+    }
+
+    strong {
+      font-size: 30px;
+      
+    }
+
+    #dollar {
+      display: flex;
+      position: relative;
+      top: 1em;
+    }
+
+    .move {
+      position: relative;
+      top: 1px;
+    }
+    
+    .month {
+      position: relative;
+      left: 0.7em;
+      top: -0.5em;
+      color:  hsl(217, 35%, 85%)
+      
+    }
+
+    #line-text {
+      padding-top: 0.8em;
+    }
+
+    .button {
+      background-color: hsl(71, 73%, 54%);
+      padding: 15px 32px;
+      margin: 4px 2px;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      color: hsl(204, 43%, 93%);
+      border: none;
+      position: relative;
+      bottom: -20px;
+      border-radius: 5px;
+    }
+
+    .button1 {
+      width: 250px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .mini-container {
+      background-color:  hsl(179, 43%, 52%);
+      padding: 2em 1em 3em 5em ;
+      color: hsl(204, 43%, 93%);
+      
+      
+    }
+
+    .list {
+      list-style: none;
+      position: relative ;
+      left: -4em;
+      bottom: 2.5em;
+      line-height: 6px;
+      color: hsl(217, 35%, 85%);
+      
+    
+      
+    }
+ 
+    .head {
+      list-style: none;
+      position: relative ;
+      left: -4em;
+      bottom: 0.8em
+    }
+
+    ul {
+      position: relative;
+      top: 1.5em;
+    }
+
+    #mast {
+      font-size: 22px;
+    }
+
+    #why {
+      font-size: 22px;
+    }
+
+
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="top-header">Join our community</h1>
+
+  <h3 class="second-header">30-day, hassle-free money back guarantee</h3>
+
+  <p class="first-para">Gain access to our full library of tutorials along with expert code reviews. 
+  <br>Perfect for any developers who are serious about honing their skills.</p>
+</div>
+  
+
+  <div class="second-container" >
+  <div class="sub">
+   <p id="mast">Monthly Subscription</p> 
+    <div class="move">
+      <div id="dollar">
+         <strong>&dollar;29</strong> <p class="month">per month</p>
+      </div>
+  
+   <div id="line-text">Full access for less than &dollar;1 a day</div> <br>
+
+    </div>
+
+      
+   <button class="button button1" type="button"> Sign Up</button> <br>
+
+  </div>
+    
+  
+ <div class="mini-container">
+   
+  <ul>
+  <li class="head"> 
+    <p id="why">Why Us</p> <br> <br>
+  
+  </li>
+
+  <li class="list">Tutorials by industry expert</li> <br>
+  <li class="list">Peer &amp; expert code review</li><br>
+  <li class="list">Coding exercises</li> <br>
+  <li class="list">Access to our GitHub repos</li><br>
+  <li class="list">Community forum</li> <br>
+  <li class="list">Flashcard decks</li> <br>
+  <li class="list">New videos every week</li>
+  </ul>
+  
+
+   
+ </div>
+  
+  </div>
+  
+</body>
+</html>
