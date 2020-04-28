@@ -33,25 +33,23 @@
     .first-para {
       color: hsl(218, 22%, 67%);
       line-height: 1.9em;
-      
-
+    
     }
-
-    .second-container {
+      .second-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
         grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        background-color:  hsl(179, 71%, 40%);
+        grid-template-areas:
+          'sub';
+        
         
     }
-
+    
     .sub {
-      margin: 40px 30px 50px 50px;
+      padding: 3em 1em 3em 3.2em;
       color: hsl(204, 43%, 93%);
-      
-      
+      background-color: hsl(179, 71%, 40%);
+       
     }
 
     strong {
@@ -105,8 +103,7 @@
       background-color:  hsl(179, 43%, 52%);
       padding: 2em 1em 3em 5em ;
       color: hsl(204, 43%, 93%);
-      
-      
+        
     }
 
     .list {
@@ -114,11 +111,8 @@
       position: relative ;
       left: -4em;
       bottom: 2.5em;
-      line-height: 6px;
+      line-height: 9px;
       color: hsl(217, 35%, 85%);
-      
-    
-      
     }
  
     .head {
@@ -141,7 +135,15 @@
       font-size: 22px;
     }
 
+    @media screen and (max-width:580px) {
+    .second-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 
+
+    
   
   </style>
 </head>
@@ -155,47 +157,44 @@
   <br>Perfect for any developers who are serious about honing their skills.</p>
 </div>
   
-
-  <div class="second-container" >
-  <div class="sub">
-   <p id="mast">Monthly Subscription</p> 
-    <div class="move">
-      <div id="dollar">
-         <strong>&dollar;29</strong> <p class="month">per month</p>
-      </div>
-  
-   <div id="line-text">Full access for less than &dollar;1 a day</div> <br>
-
-    </div>
-
-      
-   <button class="button button1" type="button"> Sign Up</button> <br>
-
-  </div>
+<div class="second-container" >
     
   
- <div class="mini-container">
-   
-  <ul>
-  <li class="head"> 
-    <p id="why">Why Us</p> <br> <br>
-  
-  </li>
+    <div class="sub">
+    
+      <p id="mast">Monthly Subscription</p> 
+      <div class="move">
+        <div id="dollar">
+       <strong>&dollar;29</strong> <p class="month">per month</p>
+        </div>
 
-  <li class="list">Tutorials by industry expert</li> <br>
-  <li class="list">Peer &amp; expert code review</li><br>
-  <li class="list">Coding exercises</li> <br>
-  <li class="list">Access to our GitHub repos</li><br>
-  <li class="list">Community forum</li> <br>
-  <li class="list">Flashcard decks</li> <br>
-  <li class="list">New videos every week</li>
-  </ul>
-  
+      <div id="line-text">Full access for less than &dollar;1 a day</div> <br>
 
-   
- </div>
+     </div>
+
+    
+       <button class="button button1" type="button"> Sign Up</button> <br>
+    </div>
   
-  </div>
+    <div class="mini-container">
+   
+       <ul>
+         <li class="head"> 
+            <p id="why">Why Us</p> <br> <br>
+    
+         </li>
+  
+        <li class="list">Tutorials by industry expert</li> <br>
+        <li class="list">Peer &amp; expert code review</li><br>
+        <li class="list">Coding exercises</li> <br>
+        <li class="list">Access to our GitHub repos</li><br>
+        <li class="list">Community forum</li> <br>
+        <li class="list">Flashcard decks</li> <br>
+        <li class="list">New videos every week</li>
+     </ul> 
+    </div>
+</div>
+
   
 </body>
 </html>
